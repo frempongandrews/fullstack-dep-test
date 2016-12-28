@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js webpack",
+    "postinstall": "webpack -p",
+    "start": "node app.js",
     "start-dev": "concurrently \"webpack\" \"nodemon app.js\""
   },
   "keywords": [],
