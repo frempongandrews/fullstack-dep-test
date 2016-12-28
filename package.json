@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "postinstall": "concurrently \"webpack -p\" \"node app.js\"",
+    "postinstall": "webpack -p, node app.js",
     "start": "node app.js",
     "start-dev": "concurrently \"webpack\" \"nodemon app.js\""
   },
