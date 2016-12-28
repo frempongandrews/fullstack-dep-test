@@ -9,9 +9,8 @@ app.get('/api', function (req, res) {
     res.send(["prova", "test", 4, 5]);
 });
 
-
 app.get("*", function (req, res) {
-    res.sendFile(path.resolve(dirname__, "/public/index.html"));
+    res.sendFile(path.resolve(__dirname, "/public/index.html"));
 });
 
 app.listen(PORT, function () {
