@@ -4,8 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "postinstall": "webpack -p",
     "start": "node app.js",
-    "start-dev": "concurrently \"webpack\" \"nodemon app.js\""
+    "start-dev": "concurrently \"webpack\" \"nodemon app.js\"",
+    "server" : "nodemon app.js"
   },
   "keywords": [],
   "author": "",
