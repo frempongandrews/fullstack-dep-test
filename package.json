@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "concurrently \"webpack\" \"nodemon app.js\""
+    "start": "node app.js webpack",
+    "start-dev": "concurrently \"webpack\" \"nodemon app.js\""
   },
   "keywords": [],
   "author": "",
